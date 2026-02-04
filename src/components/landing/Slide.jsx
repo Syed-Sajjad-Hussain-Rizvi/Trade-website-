@@ -4,7 +4,6 @@ const images = [
   "https://signals2trade.net/wp-content/uploads/2025/08/usatoday-logo-300x105-1.png.webp",
   "https://signals2trade.net/wp-content/uploads/2025/08/usinsider-logo-300x105-1.png.webp",
   "https://signals2trade.net/wp-content/uploads/2025/08/yahoo-finance-logo-300x105-1.png.webp",
-  "hhttps://signals2trade.net/wp-content/uploads/2025/08/benzinga-logo-300x105-1.png.webp",
   "https://signals2trade.net/wp-content/uploads/2025/08/geekwire-logo-300x105-1.png.webp",
   "https://signals2trade.net/wp-content/uploads/2025/08/texh-bullion-logo-300x105-1.png"
 ];
