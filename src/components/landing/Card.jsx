@@ -2,12 +2,7 @@ import { motion } from "framer-motion";
 import { Check, Users, TrendingUp, BookOpen, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const benefits = [
-	{ icon: Users, text: "+2,000 members from all over the world" },
-	{ icon: TrendingUp, text: "Everything in Signals2Trade is 100% free of charge" },
-	{ icon: BookOpen, text: "The best-rated trading program in the world" },
-	{ icon: Globe, text: "Becoming profitable on the financial market" },
-];
+
 
 export const Card = () => {
 	return (
@@ -19,6 +14,16 @@ export const Card = () => {
 
 			<div className="container relative z-10 py-12 md:py-20">
 				<div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+					{/* Right Content - Visual Element */}
+					<div className="flex justify-center">
+						<img
+							style={{ maxHeight: "700px", height: "auto" }}
+							src="https://i.pinimg.com/736x/36/1f/28/361f28c6bd3166805d7cb839d406d871.jpg"
+							alt="telegram-signals-on-phone"
+							className="w-full max-w-xs md:max-w-sm lg:max-w-md object-cover rounded-2xl border border-border/50 shadow-sm"
+						/>
+					</div>
 					{/* Left Content */}
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
@@ -67,14 +72,6 @@ export const Card = () => {
 						</motion.div>
 					</motion.div>
 
-					{/* Right Content - Visual Element */}
-					<div className="flex justify-center lg:justify-end">
-						<img
-							src="https://techxpress.pk/cdn/shop/files/review_3.png?v=1731358045"
-							alt="telegram-signals-on-phone"
-							className="w-full max-w-xs md:max-w-sm lg:max-w-md h-auto object-cover rounded-2xl border border-border/50 shadow-sm"
-						/>
-					</div>
 				</div>
 			</div>
 		</section>

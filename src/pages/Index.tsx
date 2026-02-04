@@ -8,7 +8,10 @@ import { CTA } from "@/components/landing/CTA";
 import { Trade } from "@/components/landing/Trade";
 import { Side } from "@/components/landing/Side";
 import Card from "@/components/landing/Card";
+import Cardleft from "@/components/landing/Cardleft";
+import Lenard from "@/components/landing/Lenard";
 import { Footer } from "@/components/landing/Footer";
+
 
 const Index = () => {
   return (
@@ -23,8 +26,10 @@ const Index = () => {
         <About />
         <CTA />
         <Trade />
+        <Lenard />
         <Side />
          <Card />
+         <Cardleft />
       </main>
       <Footer />
     </div>
