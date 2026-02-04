@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const reasons = [
@@ -47,7 +48,7 @@ export const WhyFree = () => {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ delay: index * 0.06 }}
-							className="flex items-center justify-center p-4 bg-white rounded-lg"
+							className="flex items-center justify-center p-3 bg-white rounded-lg"
 						>
 							<img
 								src={reason.img}
@@ -62,3 +63,5 @@ export const WhyFree = () => {
 		</section>
 	);
 };
+
+export default WhyFree;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Box, Grid, Typography, Stack, Paper } from "@mui/material";
 
 const leftItems = [
   "Free copy of the Telegram signals from Lennard",
@@ -17,15 +16,8 @@ const rightItems = [
   "Dozens of thousands of euros in training fees",
 ];
 
-const CheckIcon = ({ className = "" }) => (
-  <svg
-    className={className}
-    width="28"
-    height="28"
-    viewBox="0 0 24 24"
-    fill="none"
-    aria-hidden
-  >
+const CheckIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
     <path
       d="M20 6L9 17l-5-5"
       stroke="currentColor"
@@ -36,15 +28,8 @@ const CheckIcon = ({ className = "" }) => (
   </svg>
 );
 
-const CancelIcon = ({ className = "" }) => (
-  <svg
-    className={className}
-    width="28"
-    height="28"
-    viewBox="0 0 24 24"
-    fill="none"
-    aria-hidden
-  >
+const CancelIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
     <path
       d="M18 6L6 18M6 6l12 12"
       stroke="currentColor"
@@ -72,7 +57,7 @@ const Item = ({ text, icon, bg, iconColor }) => (
 
 export function Side() {
   return (
-    <div className="bg-[#06263B] rounded-2xl p-6 md:p-10 max-w-[1200px] mx-40px">
+    <div className="bg-[#06263B] rounded-2xl p-6 md:p-10 max-w-[1200px] mx-auto text-center md:text-left px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <h3 className="text-white font-semibold text-xl mb-4">

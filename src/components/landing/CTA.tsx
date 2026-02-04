@@ -1,5 +1,6 @@
+import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Users, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const CTA = () => {
@@ -29,15 +30,8 @@ export const CTA = () => {
                 src="https://signals2trade.net/wp-content/uploads/2026/01/WhatsApp-Video-2026-01-18-at-5.31.31-PM.mp4"
                 type="video/mp4"
               />
-              Your browser does not support the video tag.
             </video>
           </div>
-
-          <img
-            className="w-full max-w-md mx-auto rounded-md mb-6 object-cover"
-            src="https://signals2trade.net/wp-content/uploads/2026/01/Inspirational-self-education-quote-with-laurel-design.webp"
-            alt=""
-          />
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -56,3 +50,5 @@ export const CTA = () => {
     </section>
   );
 };
+
+export default CTA;

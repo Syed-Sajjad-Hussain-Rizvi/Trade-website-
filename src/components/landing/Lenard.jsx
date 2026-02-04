@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Check, Users, TrendingUp, BookOpen, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -47,16 +48,15 @@ export const Lenard = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.6 }}
-						className="text-center lg:text-left"
+						className="text-center md:text-left"
 					>
 						<h1 className="text-2xl md:text-3xl font-extrabold mb-4 text-black">
 							WHO IS{" "}
 							<span className="text-gradient">LENNARD</span>
 						</h1>
 
-						<ul className="space-y-3 mb-6 text-left max-w-xl mx-auto lg:mx-0">
+						<ul className="space-y-3 mb-6 text-left max-w-xl mx-auto md:mx-0">
 							{benefits.map((benefit, index) => {
-								const Icon = benefit.icon;
 								return (
 									<motion.li
 										key={index}
@@ -68,7 +68,7 @@ export const Lenard = () => {
 										<div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
 											<Check className="w-3 h-3 text-black" />
 										</div>
-										<span className="text-sm md:text-base text-black">
+										<span className="text-sm md:text-base">
 											{benefit.text}
 										</span>
 									</motion.li>
@@ -76,7 +76,7 @@ export const Lenard = () => {
 							})}
 						</ul>
 
-						<div className="flex justify-center lg:justify-start">
+						<div className="flex justify-center md:justify-start">
 							<Button
 								variant="cta"
 								size="lg"

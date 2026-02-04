@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Check, Users, TrendingUp, BookOpen, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,7 +19,7 @@ export const Hero = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.6 }}
-						className="text-center lg:text-left"
+						className="text-center md:text-left"
 					>
 						<h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight mb-6 text-black">
 							COPY{" "}
@@ -26,7 +27,7 @@ export const Hero = () => {
 							PROFIT FROM IT EVERY DAY
 						</h1>
 
-						<ul className="space-y-4 mb-8 text-left text-black max-w-xl mx-auto lg:mx-0">
+						<ul className="space-y-4 mb-8 text-center md:text-left text-black max-w-xl mx-auto md:mx-0">
 							{benefits.map((benefit, index) => (
 								<motion.li
 									key={index}
@@ -47,7 +48,7 @@ export const Hero = () => {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.7 }}
-							className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+							className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
 						>
 							<Button variant="cta" size="xl" className="text-white">
 								Join the FREE Group
@@ -72,3 +73,5 @@ export const Hero = () => {
 		</section>
 	);
 };
+
+export default Hero;

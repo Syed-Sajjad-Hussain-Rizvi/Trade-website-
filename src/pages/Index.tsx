@@ -1,3 +1,4 @@
+import React from "react";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Testimonials } from "@/components/landing/Testimonials";
@@ -15,7 +16,7 @@ import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-center md:text-left">
       <Header />
       <main>
        
