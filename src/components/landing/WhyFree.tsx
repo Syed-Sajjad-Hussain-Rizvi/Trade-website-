@@ -53,7 +53,7 @@ export const WhyFree = () => {
 							<img
 								src={reason.img}
 								alt={`reason-${index}`}
-								className="h-12 md:h-16 w-auto object-contain"
+								className="h-25 md:h-20 w-auto object-contain"
 								loading="lazy"
 							/>
 						</motion.div>

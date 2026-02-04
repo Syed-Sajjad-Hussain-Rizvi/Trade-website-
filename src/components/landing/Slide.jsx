@@ -38,7 +38,7 @@ export default function Slide({ speed = 20 }) {
             key={idx}
             src={src}
             alt={`ticker-${idx}`}
-            className="h-28 w-auto object-contain rounded-md shadow-sm"
+            className="h-10 w-auto object-contain rounded-md shadow-sm"
             loading="lazy"
           />
         ))}
