@@ -68,7 +68,7 @@ export const Lenard = () => {
 										<div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
 											<Check className="w-3 h-3 text-black" />
 										</div>
-										<span className="text-sm md:text-base">
+										<span className="text-sm md:text-base text-black">
 											{benefit.text}
 										</span>
 									</motion.li>

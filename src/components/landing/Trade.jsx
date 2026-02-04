@@ -39,7 +39,7 @@ export const Trade = ({ speed = 20 }) => {
 						key={idx}
 						src={src}
 						alt={`ticker-${idx}`}
-						className="h-12 w-auto object-cover rounded-md shadow-sm"
+						className="h-15 w-auto object-cover rounded-md shadow-sm"
 						loading="lazy"
 					/>
 				))}

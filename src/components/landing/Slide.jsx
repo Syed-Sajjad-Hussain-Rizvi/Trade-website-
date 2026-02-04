@@ -1,12 +1,12 @@
 import React from "react";
 
 const images = [
-  "https://picsum.photos/id/1011/300/120",
-  "https://picsum.photos/id/1015/300/120",
-  "https://picsum.photos/id/1025/300/120",
-  "https://picsum.photos/id/1035/300/120",
-  "https://picsum.photos/id/1041/300/120",
-  "https://picsum.photos/id/1050/300/120",
+  "https://signals2trade.net/wp-content/uploads/2025/08/usatoday-logo-300x105-1.png.webp",
+  "https://signals2trade.net/wp-content/uploads/2025/08/usinsider-logo-300x105-1.png.webp",
+  "https://signals2trade.net/wp-content/uploads/2025/08/yahoo-finance-logo-300x105-1.png.webp",
+  "hhttps://signals2trade.net/wp-content/uploads/2025/08/benzinga-logo-300x105-1.png.webp",
+  "https://signals2trade.net/wp-content/uploads/2025/08/geekwire-logo-300x105-1.png.webp",
+  "https://signals2trade.net/wp-content/uploads/2025/08/texh-bullion-logo-300x105-1.png"
 ];
 
 export default function Slide({ speed = 20 }) {
@@ -14,7 +14,7 @@ export default function Slide({ speed = 20 }) {
   const duration = `${speed}s`;
 
   return (
-    <section aria-label="image ticker" className="overflow-hidden w-full py-4">
+    <section aria-label="image ticker" className="overflow-hidden w-full bg-white py-4">
       <style>{`
         .ticker-track {
           display: flex;
@@ -38,7 +38,7 @@ export default function Slide({ speed = 20 }) {
             key={idx}
             src={src}
             alt={`ticker-${idx}`}
-            className="h-28 w-auto object-cover rounded-md shadow-sm"
+            className="h-28 w-auto object-contain rounded-md shadow-sm"
             loading="lazy"
           />
         ))}
