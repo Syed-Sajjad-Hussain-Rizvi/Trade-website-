@@ -57,7 +57,7 @@ This means that you get a whole host of additional services, allowing you to tak
          
 
           {/* Right - Stats Grid */}
-          <video autoPlay loop muted src="https://signals2trade.net/wp-content/uploads/2026/01/s2t-Video-1-1-1.mkv"></video>
+          <video autoPlay loop muted src="https://signals2trade.net/wp-content/uploads/2026/01/s2t-Video3-1.mkv"></video>
            <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
