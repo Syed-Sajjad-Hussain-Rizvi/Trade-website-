@@ -1,11 +1,4 @@
 import React from "react";
-import { Box, Grid, Typography, Stack, IconButton, Divider } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import LanguageIcon from "@mui/icons-material/Language";
 
 const columns = [
   { title: "PRODUCT", items: ["Forex", "Metals", "Indices", "Bonds"] },
@@ -15,29 +8,22 @@ const columns = [
 ];
 
 const SocialIcon = ({ children, label }) => (
-  <button
-    aria-label={label}
-    className="w-9 h-9 rounded flex items-center justify-center bg-white hover:bg-gray-100"
-  >
+  <button aria-label={label} className="w-9 h-9 rounded flex items-center justify-center bg-white">
     <span className="w-4 h-4 text-[#062B3F]">{children}</span>
   </button>
 );
 
 export function Footer() {
   return (
-    <Box sx={{ backgroundColor: "#062B3F", px: { xs: 3, md: 10 }, pt: 6 }}>
+    <footer className="bg-[#062B3F] text-white px-6 md:px-16 py-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {columns.map((col, idx) => (
             <div key={idx}>
-              <h4 className="text-sm font-semibold tracking-wide text-white/90 mb-3">
-                {col.title}
-              </h4>
+              <h4 className="text-sm font-semibold mb-3">{col.title}</h4>
               <ul className="space-y-2">
                 {col.items.map((it, i) => (
-                  <li key={i} className="text-sm text-white/90 cursor-pointer">
-                    {it}
-                  </li>
+                  <li key={i} className="text-sm text-white/90">{it}</li>
                 ))}
               </ul>
             </div>
@@ -46,10 +32,8 @@ export function Footer() {
 
         <hr className="border-white/10 my-6" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-white/80">
-            © {new Date().getFullYear()} SIGNALTRADE. All rights reserved.
-          </div>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-sm text-white/80">© {new Date().getFullYear()} SIGNALTRADE. All rights reserved.</div>
 
           <div className="flex items-center gap-2">
             <SocialIcon label="Facebook">
@@ -107,7 +91,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </Box>
+    </footer>
   );
 }
 

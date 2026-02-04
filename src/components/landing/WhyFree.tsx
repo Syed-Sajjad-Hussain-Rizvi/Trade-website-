@@ -5,7 +5,7 @@ const reasons = [
 		img: "https://signals2trade.net/wp-content/uploads/2026/01/2024-Best-Forex-Broker-of-the-Year-award-badge-from-ProFX-Awards-Dubai.webp",
 	},
 	{
-		img: "https://signals2trade.net/wp-content/uploads/2026/01/2024-Most-Trusted-Forex-Broker-of-the-Year-%E2%80%93-ProFX-Awards-Dubai.webp.",
+		img: "https://signals2trade.net/wp-content/uploads/2026/01/2024-Most-Trusted-Forex-Broker-of-the-Year-%E2%80%93-ProFX-Awards-Dubai.webp",
 	},
 	{
 		img: "https://signals2trade.net/wp-content/uploads/2026/01/forex-affliliate-broker-reward-dubai.webp",
@@ -23,59 +23,38 @@ const reasons = [
 
 export const WhyFree = () => {
 	return (
-		<section id="why-free" className=" md:py-28 bg-white">
-			<div className="container-fluid">
+		<section id="why-free" className="py-12 md:py-20 bg-white">
+			<div className="container">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
-					className="text-center mb-16"
+					className="text-center mb-8"
 				>
-					<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-black">
+					<h2 className="text-2xl md:text-3xl font-bold mb-2 text-black">
 						My <span className="text-gradient">Goals</span>
 					</h2>
-					<p className="text-lg text-black max-w-2xl mx-auto">
-						My goal is to help as many people as possible to either become
-						financially free or at least earn some extra money through day
-						trading, every day. Everyone should have the opportunity to live the
-						life of their dreams, both financially and in terms of control over
-						their own time.
-						<br />
-						<br />
-						The dream of many people is to work whenever they want and from
-						wherever they want, and day trading is made for that lifestyle!
-						<br />
-						<br />
-						I have found a way to do this for free. I have teamed up with one of
-						the largest regulated brokers in the world. As long as we all use
-						this platform to trade, 100% of my signals are free for everyone as
-						the broker pays and sponsors me for my work instead!
-						<br />
-						<br />
-						The only criteria is that the broker also benefits by moving our live
-						accounts to the AXI broker! So as long as we all use AXI and earn
-						the broker a few fees, everything is completely free. What’s more,
-						the broker has the lowest fees on the entire market!
+					<p className="text-sm md:text-base text-black max-w-2xl mx-auto">
+						Helping people become financially free by sharing free signals.
 					</p>
 				</motion.div>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-6 gap-6">
+				<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 items-center justify-items-center">
 					{reasons.map((reason, index) => (
 						<motion.div
 							key={index}
-							initial={{ opacity: 0, y: 20 }}
+							initial={{ opacity: 0, y: 10 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							transition={{ delay: index * 0.1 }}
-							className="bg-white rounded-xl p-4 shadow-sm transition-all duration-300"
+							transition={{ delay: index * 0.06 }}
+							className="flex items-center justify-center p-4 bg-white rounded-lg"
 						>
-							<div className="w-full h-full rounded-xl flex items-center justify-center mx-auto mb-4">
-								<img
-									src={reason.img}
-									alt={`reason-${index}`}
-									className=""
-								/>
-							</div>
+							<img
+								src={reason.img}
+								alt={`reason-${index}`}
+								className="h-12 md:h-16 w-auto object-contain"
+								loading="lazy"
+							/>
 						</motion.div>
 					))}
 				</div>
