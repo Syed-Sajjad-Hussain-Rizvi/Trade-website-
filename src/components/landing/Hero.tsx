@@ -11,7 +11,7 @@ const benefits = [
 
 export const Hero = () => {
 	return (
-		<section className="relative py-12 md:py-20 overflow-hidden hero-gradient">
+		<section className="relative py-12 md:py-20 overflow-hidden hero-gradient my-10">
 			<div className="container relative z-10">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 					<motion.div
